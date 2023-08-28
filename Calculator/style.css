@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Calculator {
+    background-color: rgb(227, 224, 65);
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    
+}
+
+.starting {
+    display: flex;
+    justify-content: space-between;
+}
+
+.initial {
+
+    width: 49%;
+    height: 5vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 4rem;
+    background-color:rgb(2, 2, 48);
+    color: white;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.5rem;
+
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#equal {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4rem;
+    background-color:rgb(2, 2, 48);
+    color: white;
+}
+
+input {
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 0.4rem;
+    font-size: 3vh;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 4rem;
+}
+.sign{
+    background-color: rgb(4, 4, 95);
+    color: white;
+}
+
+.n{
+    background-color:white;
+    color: black;
+}
+#equal:hover,.initial:hover ,.n:hover ,.sign:hover{
+    
+    cursor: pointer;
+}
+.animate{
+    animation: color 0.3s 1;
+}
+@keyframes color {
+    0%{
+        filter: invert(1);
+    }
+    100%{
+        filter: invert(0);
+    }
+    
+}
+.sign:hover{
+    background-color: blue;
+}
+#equal:hover{
+    background-color: rgb(107, 107, 246);
+    color: black;
+}
+.initial:hover{
+    background-color: rgb(107, 107, 246);
+    color: black;
+}
+.n:hover{
+    filter: invert(1);
+}
+.container{
+    background-color: black;
+    height: 7.2vh;
+    width:20rem;
+    border-radius: 4rem;
+    margin-top: 2rem;
+    
+}
+.container .circle{
+    background-color: white;
+    height:90%;
+    width:16%;
+    position: relative;
+    left:1.5%;
+    top:0.18rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.container .circle:hover{
+    cursor: pointer;
+}
+.container .move{
+    position: relative;
+    left:83%;
+    background-color: black;
+    
+    
+}
+.color{
+    background-color: black;
+    color: white;
+}
+.change{
+    background-color: white;
+}
+.border{
+    border:2px solid white;
+}
