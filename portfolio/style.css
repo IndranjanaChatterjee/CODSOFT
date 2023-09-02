@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Caladea:ital,wght@1,700&family=Dancing+Script:wght@500;700&family=Noto+Sans:ital,wght@0,600;1,200&family=Pacifico&family=Poppins:wght@100;400;700&family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background: linear-gradient(to bottom right, #23192e, #351e4d);
+  transition: all 0.5s linear;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #bebbbb;
+  font-size: 2vw;
+  background-color: #130127;
+  max-width: 100%;
+}
+header nav .two ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+header nav .two ul li {
+  list-style: none;
+}
+header nav .two ul li a {
+  text-decoration: none;
+  color: #bebbbb;
+  font-size: 2vw;
+}
+header nav .two ul li:hover {
+  transform: scale(1.02);
+  text-decoration: underline;
+  color: #fac9b8;
+}
+main .Home,
+main .About {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  flex-wrap: wrap;
+}
+.top {
+  font-size: 1.5rem;
+}
+.name {
+  font-size: 3rem;
+}
+#element {
+  color: cyan;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+main .Home .intro,
+main .About .intro {
+  color: white;
+  width: 50%;
+}
+main .Home .image,
+main .About .image {
+  width: 31rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .Home .image img
+{
+    width: 90%;
+    height: 10%;
+
+}
+main .About .image img {
+  width: 40%;
+  height: 10%;
+  
+  box-shadow: 4px 6px 60px 10px cyan;
+}
+.About .intro h1 {
+  font-size: 5rem;
+  color: cyan;
+  font-weight: 400;
+}
+.Home .intro .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+
+}
+.Home .intro .socials {
+  margin: 1rem 1px;
+}
+.Home .intro .socials a i {
+  color: cyan;
+  border: 2px solid cyan;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.Home .intro .socials a :hover {
+  box-shadow: 1px 2px 50px 10px cyan;
+  transition: all 0.2s linear;
+}
+
+#link:hover {
+  color: blue;
+  background-color: cyan;
+}
+#git:hover {
+  color: black;
+  background-color: cyan;
+}
+main .Skills {
+  margin: 2rem;
+}
+main .Skills h1 {
+  color: cyan;
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+  font-weight: 400;
+}
+main .Skills .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20rem;
+}
+input[type="range"] {
+  appearance: none;
+  height: 0.5rem;
+  width: 15rem;
+  border-radius: 2rem;
+  background-color: cyan;
+  margin-right: 1rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: rgb(178, 56, 235);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.technical,
+.professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22rem;
+  width: 20rem;
+  border: 2px solid cyan;
+  padding: 6rem 4rem;
+  border-radius: 3rem;
+}
+main .Skills .skills .technical h2,
+main .Skills .skills .professional h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fac9b8;
+  font-weight: 400;
+}
+main .Skills .skills .technical .skill p {
+  color: #bebbbb;
+  font-size: 1.5rem;
+}
+main .Skills .skills .technical .skill {
+  margin: 0.1rem;
+  color: #fac9b8;
+}
+main .Skills .skills .technical .skill p i {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+main .Skills .skills .technical .la1 p i {
+  color: red;
+}
+main .Skills .skills .technical .la2 p i {
+  color: blue;
+}
+main .Skills .skills .technical .la3 p i {
+  color: yellow;
+}
+main .Skills .skills .technical .la4 p i {
+  color: rgb(255, 94, 0);
+}
+main .Skills .skills .technical .la5 p i {
+  color: rgb(59, 138, 241);
+}
+main .Skills .skills .technical .la6 p i {
+  color: yellow;
+}
+main .Skills .skills .technical .la7 p i {
+  color: rgb(0, 238, 255);
+}
+main .Skills .skills .professional .skill1 {
+  background-color: #bebbbb;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border-radius: 3rem;
+}
+main .Skills .skills .professional .skill1:hover{
+    box-shadow:1px 3px 40px 10px #bebbbb;
+    
+
+}
+@media(max-width:1100px)
+{
+    main .Home{
+        
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
