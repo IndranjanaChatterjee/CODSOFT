@@ -51,7 +51,10 @@ main .About {
   justify-content: center;
   align-items: center;
   margin: 3rem;
-  flex-wrap: wrap-reverse;
+}
+main .About
+{
+  gap:3rem;
 }
 .top {
   font-size: 1.5rem;
@@ -67,28 +70,26 @@ main .About {
 main .Home .intro,
 main .About .intro {
   color: white;
-  width: 50%;
+  padding: 2rem;
+  margin:0.7em;
+  
 }
 main .Home .image,
 main .About .image {
-  width: 31rem;
+  
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .Home .image img
-{
-    width: 90%;
-    height: 10%;
 
-}
 main .About .image img {
-  width: 40%;
-  height: 10%;
+  width: 15rem;
+  margin: 1rem;
   
-  box-shadow: 4px 6px 60px 10px cyan;
-}
+
+  
+} 
 .About .intro h1 {
   font-size: 5rem;
   color: cyan;
@@ -100,7 +101,6 @@ main .About .image img {
   align-items: center;
   gap: 1rem;
   font-size: 2.5rem;
-
 }
 .Home .intro .socials {
   margin: 1rem 1px;
@@ -130,7 +130,7 @@ main .Skills {
 main .Skills h1 {
   color: cyan;
   text-align: center;
-  font-size: 5rem;
+  font-size: clamp(0.5rem, 4rem, 5rem);
   margin: 1rem;
   font-weight: 400;
 }
@@ -164,14 +164,15 @@ input[type="range"]::-webkit-slider-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 22rem;
-  width: 20rem;
+
+  width: 22rem;
   border: 2px solid cyan;
-  padding: 6rem 4rem;
+  padding: 3rem 2rem;
   border-radius: 3rem;
   transition: all 0.3s ease-in-out;
 }
-.technical:hover,.professional:hover{
+.technical:hover,
+.professional:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   box-shadow: 1px 2px 50px 10px cyan;
@@ -224,36 +225,30 @@ main .Skills .skills .professional .skill1 {
   width: 100%;
   border-radius: 3rem;
 }
-main .Skills .skills .professional .skill1:hover{
-    box-shadow:1px 3px 40px 10px #bebbbb;
-    
-
+main .Skills .skills .professional .skill1:hover {
+  box-shadow: 1px 3px 40px 10px #bebbbb;
 }
-.Projects
-{
+.Projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.projects
-{
+.projects {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.Projects h1{
+.Projects h1 {
   text-align: center;
   width: 100%;
-  font-size: 5rem;
+  font-size: clamp(0.5rem, 4rem, 5rem);
   color: cyan;
   font-weight: 400;
 }
 
-.p
-{
-  width: 25rem;
+.p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,22 +260,20 @@ main .Skills .skills .professional .skill1:hover{
   margin: 2rem;
   cursor: pointer;
 }
-.pic
-{
+.pic {
   width: 25rem;
   height: 27rem;
   border: none;
   border-radius: 3rem;
   transition: all 0.15s linear;
 }
-.p .layer
-{
+.p .layer {
   width: 100%;
   height: 0;
   position: absolute;
   left: 0;
   bottom: 0;
-  background:linear-gradient(rgb(0, 255, 255,0.7),rgb(16, 16, 214)) ;
+  background: linear-gradient(rgb(0, 255, 255, 0.7), rgb(16, 16, 214));
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -290,95 +283,135 @@ main .Skills .skills .professional .skill1:hover{
   transition: all 0.5s ease-in-out;
   color: #130127;
 }
-.p .layer h3
-{
+.p .layer h3 {
   font-size: 3rem;
   text-align: center;
   margin: 1rem;
-  
-  
 }
-.p .layer p
-{
-  font-size:1.3rem ;
+.p .layer p {
+  font-size: 1.3rem;
   padding: 0.5rem;
 }
-.p .layer a i
-{
+.p .layer a i {
   font-size: 2.5rem;
   color: black;
 }
-.p:hover img
-{
+.p:hover img {
   transform: scale(1.05);
 }
 
-.p:hover .layer{
+.p:hover .layer {
   height: 100%;
 }
-main .Contact
-{
+main .Contact {
   margin: 1.5rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .Contact h1
-{
+main .Contact h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: clamp(0.5rem, 4rem, 5rem);
   font-weight: 400;
   color: cyan;
 }
-main .Contact .give
-{
+main .Contact .give {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap:4rem;
+  gap: 4rem;
 }
-main .Contact .give .details
-{
-  width: 37rem;
-  color:white;
+main .Contact .give .details {
+  color: white;
 }
-main .Contact .give .details .email i
-{
+main .Contact .give .details h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+main .Contact .give .details .email i {
   font-size: 2rem;
-  color:#FF2E0F;
+  color: #ff2e0f;
   margin-right: 1rem;
 }
-main .Contact .give .details .phn i
-{
+main .Contact .give .details .phn i {
   font-size: 2rem;
-  color:black;
+  color: black;
   margin-right: 1rem;
 }
-main .Contact .give .details p
-{
-  font-size: 1.3rem;
-  
+main .Contact .give .details p {
+  font-size: clamp(0.5rem, 2.5vw, 2rem);
 }
-main .Contact .give .contact form
-{
+main .Contact .give .contact form {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+
+  padding: 1rem;
 }
-main .Contact .contact form input,main .Contact .contact form textarea
-{
+main .Contact .contact form input,
+main .Contact .contact form textarea {
   border: none;
   outline: none;
   width: 30rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #67676d;
   border-radius: 3rem;
   font-size: 1rem;
   font-weight: 200;
-}main .Contact .contact form input::placeholder,main .Contact .contact form textarea::placeholder
-{
+}
+main .Contact .contact form input::placeholder,
+main .Contact .contact form textarea::placeholder {
   color: black;
+}
+main .Contact .contact form input[type="submit"] {
+  border: none;
+  outline: none;
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #e2f458;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+main .Contact .contact form input[type="submit"]:hover {
+  background-color: #e6ee0b;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  main .Contact .give {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) 
+{
+  main .Home,
+  main .About {
+    flex-wrap: wrap-reverse;
+  }
+  .i
+  {
+    width: 100%;
+  }
+
+}
+@media (max-width: 650px) {
+  
+  main .Contact .contact form input,
+  main .Contact .contact form textarea {
+    width: 50vw;
+  }
+  .pic {
+    width: 20rem;
+    height: 22rem;
+  }
+  .technical,
+  .professional {
+    width: 15rem;
+  }
 }
