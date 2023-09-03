@@ -260,14 +260,15 @@ main .Skills .skills .professional .skill1:hover{
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  border: none;
+  border: 1px solid cyan;
   border-radius: 3rem;
   margin: 2rem;
+  cursor: pointer;
 }
 .pic
 {
   width: 25rem;
-  height: 30rem;
+  height: 27rem;
   border: none;
   border-radius: 3rem;
   transition: all 0.15s linear;
@@ -302,6 +303,11 @@ main .Skills .skills .professional .skill1:hover{
   font-size:1.3rem ;
   padding: 0.5rem;
 }
+.p .layer a i
+{
+  font-size: 2.5rem;
+  color: black;
+}
 .p:hover img
 {
   transform: scale(1.05);
@@ -309,4 +315,70 @@ main .Skills .skills .professional .skill1:hover{
 
 .p:hover .layer{
   height: 100%;
+}
+main .Contact
+{
+  margin: 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .Contact h1
+{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  color: cyan;
+}
+main .Contact .give
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4rem;
+}
+main .Contact .give .details
+{
+  width: 37rem;
+  color:white;
+}
+main .Contact .give .details .email i
+{
+  font-size: 2rem;
+  color:#FF2E0F;
+  margin-right: 1rem;
+}
+main .Contact .give .details .phn i
+{
+  font-size: 2rem;
+  color:black;
+  margin-right: 1rem;
+}
+main .Contact .give .details p
+{
+  font-size: 1.3rem;
+  
+}
+main .Contact .give .contact form
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+main .Contact .contact form input,main .Contact .contact form textarea
+{
+  border: none;
+  outline: none;
+  width: 30rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #67676d;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 200;
+}main .Contact .contact form input::placeholder,main .Contact .contact form textarea::placeholder
+{
+  color: black;
 }
