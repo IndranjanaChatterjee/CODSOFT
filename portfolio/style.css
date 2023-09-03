@@ -38,7 +38,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem;
   color: #bebbbb;
   font-size: 2vw;
   background-color: #130127;
@@ -66,7 +66,7 @@ header nav .two ul li {
 }
 header nav .two .main i,header nav .two ul .close i
 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin: 1rem;
   display:none;
   cursor: pointer;
@@ -74,7 +74,7 @@ header nav .two .main i,header nav .two ul .close i
 header nav .two ul li a {
   text-decoration: none;
   color: #bebbbb;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: all 0.6s;
 }
 header nav .two ul li:hover {
@@ -128,7 +128,7 @@ main .About .image img {
   
 } 
 .About .intro h1 {
-  font-size: clamp(0.5rem, 4rem, 5rem);
+  font-size: clamp(0.5rem, 5rem, 6rem);
   color: cyan;
   font-weight: 400;
 }
@@ -167,7 +167,7 @@ main .Skills {
 main .Skills h1 {
   color: cyan;
   text-align: center;
-  font-size: clamp(0.5rem, 4rem, 5rem);
+  font-size: clamp(0.5rem, 5rem, 6rem);
   margin: 1rem;
   font-weight: 400;
 }
@@ -281,7 +281,7 @@ main .Skills .skills .professional .skill1:hover {
 .Projects h1 {
   text-align: center;
   width: 100%;
-  font-size: clamp(0.5rem, 4rem, 5rem);
+  font-size: clamp(0.5rem, 5rem, 6rem);
   color: cyan;
   font-weight: 400;
   
@@ -319,7 +319,7 @@ main .Skills .skills .professional .skill1:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #130127;
 }
 .p .layer h3 {
@@ -342,6 +342,14 @@ main .Skills .skills .professional .skill1:hover {
 .p:hover .layer {
   height: 100%;
 }
+main .Resume
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
 main .Contact {
   
   display: flex;
@@ -352,7 +360,7 @@ main .Contact {
 main .Contact h1 {
   text-align: center;
   width: 100%;
-  font-size: clamp(0.5rem, 4rem, 5rem);
+  font-size: clamp(0.5rem, 5rem, 6rem);
   color: cyan;
   font-weight: 400;
   
@@ -362,11 +370,11 @@ main .Contact .give {
   flex-direction: row;
   justify-content: center;
   
-  gap: 4rem;
+  gap: 2rem;
 }
 main .Contact .give .details {
   color: white;
-  margin: 1rem;
+  margin-left: 1.5rem;
 }
 main .Contact .give .details h2 {
   font-size: 4rem;
@@ -397,6 +405,7 @@ main .Contact .give .contact form {
   flex-direction: column;
 
   padding: 1rem;
+  margin-right: 3rem;
 }
 main .Contact .contact form input,
 main .Contact .contact form textarea {
@@ -404,10 +413,10 @@ main .Contact .contact form textarea {
   outline: none;
   width: 30rem;
   margin-bottom: 1rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   background-color: #67676d;
   border-radius: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 main .Contact .contact form input::placeholder,
