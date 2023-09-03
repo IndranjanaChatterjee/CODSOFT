@@ -25,3 +25,12 @@ close.addEventListener("click",()=>
 {
   menu.style.top="-100%";
 })
+var typed = new Typed("#cv", {
+  strings: [
+    "Welcome to my digital resume! Here, you'll find a comprehensive overview of my professional journey, skills, and accomplishments. Through this document, I aim to provide you with a detailed insight into my background, experience, and expertise. Feel free to browse through my career story, and don't hesitate to get in touch if you'd like to discuss potential collaborations or opportunities"
+  ],
+  typeSpeed: 10,
+ 
+  
+  
+});

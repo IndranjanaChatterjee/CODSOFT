@@ -82,7 +82,15 @@ header nav .two ul li:hover {
   text-decoration: underline;
   color: #fac9b8;
 }
-main .Home,
+main .Home
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  padding: 2rem;
+}
+
 main .About {
   display: flex;
   justify-content: center;
@@ -93,11 +101,19 @@ main .About
 {
   gap:3rem;
 }
+main .About .intro p
+{
+  text-align: center;
+}
 .top {
   font-size: 1.5rem;
 }
 .name {
   font-size: 3rem;
+}
+#codechef
+{
+  color:cyan;
 }
 #element {
   color: cyan;
@@ -110,6 +126,26 @@ main .About .intro {
   padding: 2rem;
   margin:0.7em;
   
+}
+
+main .Home .intro .cv1 a button
+{
+  width:10rem;
+  height:3.5rem;
+  font-size: 1.2rem;
+  
+  border: 1.5px solid cyan;
+  border-radius: 3rem;
+  color:cyan;
+  background-color:#23192e;
+  transition: all 0.3s ease-in-out;
+}
+main .Home .intro .cv1 a button:hover
+{
+  cursor: pointer;
+  background-color: cyan;
+  color: #130127;
+  box-shadow: 1px 2px 20px 5px cyan;
 }
 main .Home .image,
 main .About .image {
@@ -128,9 +164,10 @@ main .About .image img {
   
 } 
 .About .intro h1 {
-  font-size: clamp(0.5rem, 5rem, 6rem);
+  font-size: clamp(0.5rem, 4rem, 5rem);
   color: cyan;
   font-weight: 400;
+  padding-left: 1.5rem;
 }
 .Home .intro .socials {
   display: flex;
@@ -167,7 +204,7 @@ main .Skills {
 main .Skills h1 {
   color: cyan;
   text-align: center;
-  font-size: clamp(0.5rem, 5rem, 6rem);
+  font-size: clamp(0.5rem, 4rem, 5rem);
   margin: 1rem;
   font-weight: 400;
 }
@@ -281,7 +318,7 @@ main .Skills .skills .professional .skill1:hover {
 .Projects h1 {
   text-align: center;
   width: 100%;
-  font-size: clamp(0.5rem, 5rem, 6rem);
+  font-size: clamp(0.5rem, 4rem, 5rem);
   color: cyan;
   font-weight: 400;
   
@@ -350,6 +387,48 @@ main .Resume
   align-items: center;
   padding: 2rem;
 }
+main .Resume .cv
+{
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .Resume h1
+{
+  text-align: center;
+  width: 100%;
+  color:cyan;
+  font-size: clamp(0.5rem,4rem,5rem);
+  font-weight: 400;
+}
+main .Resume #cv
+{
+  color: white;
+  font-size: clamp(0.5rem, 1.4rem, 2rem);
+  text-align: center;
+}
+.cv a button
+{
+  width:10rem;
+  height:3.5rem;
+  font-size: 1.2rem;
+  
+  border: 1.5px solid cyan;
+  border-radius: 3rem;
+  color:cyan;
+  background-color:#23192e;
+  transition: all 0.3s ease-in-out;
+}
+.cv a button:hover
+{
+  cursor: pointer;
+  background-color: cyan;
+  color: #130127;
+  box-shadow: 1px 2px 20px 5px cyan;
+}
 main .Contact {
   
   display: flex;
@@ -360,7 +439,7 @@ main .Contact {
 main .Contact h1 {
   text-align: center;
   width: 100%;
-  font-size: clamp(0.5rem, 5rem, 6rem);
+  font-size: clamp(0.5rem, 4rem, 5rem);
   color: cyan;
   font-weight: 400;
   
@@ -384,19 +463,25 @@ main .Contact .give .details h2 {
   width: 100%;
   margin: 1rem;
 }
-main .Contact .give .details .email i {
+main .Contact .give .details .email,main .Contact .give .details .phn
+{
+  margin-left: 1rem;
   font-size: 2rem;
+}
+main .Contact .give .details .email i {
+  font-size: 2.3rem;
   color: #ff2e0f;
   margin-right: 1rem;
 }
 main .Contact .give .details .phn i {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: black;
   margin-right: 1rem;
 }
 main .Contact .give .details p {
   font-size: clamp(0.5rem, 2rem, 3rem);
   padding-left: 0.5rem;
+  text-align: center;
 }
 main .Contact .give .contact form {
   display: flex;
