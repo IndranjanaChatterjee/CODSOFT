@@ -7,3 +7,9 @@ var typed = new Typed("#element", {
   backDelay:1000,
   loop:true
 });
+window.addEventListener("scroll",()=>
+{
+  let h=document.querySelector("nav");
+  console.log(h);
+  h.classList.toggle("scrolldwn",window.scrollY>0);
+})
