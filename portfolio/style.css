@@ -50,6 +50,8 @@ header nav {
 }
 header nav .one
 {
+  font-size: 2rem;
+  font-weight: 700;
   transition: 0.6s;
 }
 header nav .two ul {
@@ -57,14 +59,22 @@ header nav .two ul {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+  position: relative;
 }
 header nav .two ul li {
   list-style: none;
 }
+header nav .two .main i,header nav .two ul .close i
+{
+  font-size: 4rem;
+  margin: 1rem;
+  display:none;
+  cursor: pointer;
+}
 header nav .two ul li a {
   text-decoration: none;
   color: #bebbbb;
-  font-size: 2vw;
+  font-size: 1.5rem;
   transition: all 0.6s;
 }
 header nav .two ul li:hover {
@@ -449,5 +459,40 @@ main .Contact .contact form input[type="submit"]:hover {
   .technical,
   .professional {
     width: 15rem;
+  }
+}
+@media(max-width:1130px)
+{
+  header nav .two ul
+  {
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease-in-out;
+    display: none;
+    background-color:rgb(19, 1, 39,0.9);
+  }
+  header nav .two ul li a
+  {
+    font-size: 3rem;
+
+  }
+  header nav .two ul .close i
+  {
+     display: block;
+     position: absolute;
+     top:20px;
+     right:20px;
+
+  }
+  header nav .two .main i
+  {
+    display: block;
   }
 }
