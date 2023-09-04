@@ -583,6 +583,65 @@ p {
 #see {
   display: none;
 }
+main .Education
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .Education .outer
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  
+}
+main .Education h1
+{
+  text-align: center;
+  width: 100%;
+  font-size: clamp(0.5rem, 4rem, 5rem);
+  color: cyan;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
+  border-bottom: 1px solid cyan;
+
+}
+main .Education .outer .box
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:20rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-left: 5px solid #bebbbb;
+  height: 10rem;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+main .Education .outer .box i
+{
+  position: absolute;
+  top:-5px;
+  left:-25px;
+  font-size: 2.5rem;
+  color: yellow;
+  
+}
+main .Education .outer .box h2
+{
+  color:#bebbbb;
+}
+main .Education .outer .box p
+{
+  color:#fac9b8;
+}
 @media (max-width: 1000px) {
   main .Contact .give {
     flex-wrap: wrap;
@@ -609,6 +668,19 @@ p {
   .technical,
   .professional {
     width: 15rem;
+  }
+  main .Education .outer .box
+  {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 400px) {
+  
+  main .Education .outer .box
+  {
+    width: 10rem;
+    height: 20rem;
   }
 }
 @media (max-width: 1130px) {
