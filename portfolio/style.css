@@ -17,23 +17,20 @@ body {
   background: linear-gradient(to bottom right, #23192e, #351e4d);
   transition: all 0.5s linear;
 }
-.scrolldwn
-{
-  background:linear-gradient(to bottom right,#8e3dea,#30045f,#130127) ;
+.scrolldwn {
+  background: linear-gradient(to bottom right, #8e3dea, #30045f, #130127);
   transition: all 0.5s;
   padding: 0.7rem;
-  
 }
-header
-{
+header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   transition: all 0.5s;
   border: none;
-  outline:  none;
+  outline: none;
 }
 header nav {
   display: flex;
@@ -46,11 +43,9 @@ header nav {
   max-width: 100%;
   transition: all 0.5s;
   border: none;
-  outline:  none;
-  
+  outline: none;
 }
-header nav .one
-{
+header nav .one {
   font-size: 2rem;
   font-weight: 700;
   transition: 0.6s;
@@ -65,11 +60,11 @@ header nav .two ul {
 header nav .two ul li {
   list-style: none;
 }
-header nav .two .main i,header nav .two ul .close i
-{
+header nav .two .main i,
+header nav .two ul .close i {
   font-size: 2.5rem;
   margin: 1rem;
-  display:none;
+  display: none;
   cursor: pointer;
 }
 header nav .two ul li a {
@@ -83,13 +78,47 @@ header nav .two ul li:hover {
   text-decoration: underline;
   color: #fac9b8;
 }
-main .Home
-{
+main .Home {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 4rem;
   padding: 2rem;
+}
+.wave {
+  font-size: 2rem;
+  animation-name: wave-animation; 
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%; 
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } 
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 main .About {
@@ -98,12 +127,10 @@ main .About {
   align-items: center;
   margin: 3rem;
 }
-main .About
-{
-  gap:3rem;
+main .About {
+  gap: 3rem;
 }
-main .About .intro p
-{
+main .About .intro p {
   text-align: center;
 }
 .top {
@@ -112,9 +139,8 @@ main .About .intro p
 .name {
   font-size: 3rem;
 }
-#codechef
-{
-  color:cyan;
+#codechef {
+  color: cyan;
 }
 #element {
   color: cyan;
@@ -125,24 +151,21 @@ main .Home .intro,
 main .About .intro {
   color: white;
   padding: 2rem;
-  margin:0.7em;
-  
+  margin: 0.7em;
 }
 
-main .Home .intro .cv1 a button
-{
-  width:10rem;
-  height:3.5rem;
+main .Home .intro .cv1 a button {
+  width: 10rem;
+  height: 3.5rem;
   font-size: 1.2rem;
-  
+
   border: 1.5px solid cyan;
   border-radius: 3rem;
-  color:cyan;
-  background-color:#23192e;
+  color: cyan;
+  background-color: #23192e;
   transition: all 0.3s ease-in-out;
 }
-main .Home .intro .cv1 a button:hover
-{
+main .Home .intro .cv1 a button:hover {
   cursor: pointer;
   background-color: cyan;
   color: #130127;
@@ -150,8 +173,6 @@ main .Home .intro .cv1 a button:hover
 }
 main .Home .image,
 main .About .image {
-  
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,37 +181,30 @@ main .About .image {
 main .About .image img {
   width: 15rem;
   margin: 1rem;
-  
-
-  
-} 
-main .About .intro .more
-{
+}
+main .About .intro .more {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 1.5rem;
 }
-main .About .intro .more button
-{
-  width:10rem;
-  height:3.5rem;
+main .About .intro .more button {
+  width: 10rem;
+  height: 3.5rem;
   font-size: 1.2rem;
-  
+
   border: 1.5px solid cyan;
   border-radius: 3rem;
-  color:cyan;
-  background-color:#23192e;
+  color: cyan;
+  background-color: #23192e;
   transition: all 0.3s ease-in-out;
 }
-main .About .intro .more button:hover
-{
+main .About .intro .more button:hover {
   cursor: pointer;
   background-color: cyan;
   color: #130127;
   box-shadow: 1px 2px 20px 5px cyan;
-
 }
 .About .intro h1 {
   font-size: clamp(0.5rem, 4rem, 5rem);
@@ -201,7 +215,6 @@ main .About .intro .more button:hover
   width: 90%;
   border-bottom: 1px solid cyan;
   padding-bottom: 1rem;
-  
 }
 .Home .intro .socials {
   display: flex;
@@ -241,7 +254,7 @@ main .Skills h1 {
   font-size: clamp(0.5rem, 4rem, 5rem);
   margin: 2rem;
   font-weight: 400;
-  
+
   width: 90%;
   border-bottom: 1px solid cyan;
   padding-bottom: 1rem;
@@ -420,16 +433,14 @@ main .Skills .skills .professional .skill1:hover {
 .p:hover .layer {
   height: 100%;
 }
-main .Resume
-{
+main .Resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
 }
-main .Resume .cv
-{
+main .Resume .cv {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
@@ -437,45 +448,40 @@ main .Resume .cv
   justify-content: center;
   align-items: center;
 }
-main .Resume h1
-{
+main .Resume h1 {
   text-align: center;
   width: 100%;
-  color:cyan;
-  font-size: clamp(0.5rem,4rem,5rem);
+  color: cyan;
+  font-size: clamp(0.5rem, 4rem, 5rem);
   font-weight: 400;
   margin-bottom: 1rem;
   width: 90%;
   border-bottom: 1px solid cyan;
   padding-bottom: 1rem;
 }
-main .Resume #cv
-{
+main .Resume #cv {
   color: white;
   font-size: clamp(0.5rem, 1.4rem, 2rem);
   text-align: center;
 }
-.cv a button
-{
-  width:10rem;
-  height:3.5rem;
+.cv a button {
+  width: 10rem;
+  height: 3.5rem;
   font-size: 1.2rem;
-  
+
   border: 1.5px solid cyan;
   border-radius: 3rem;
-  color:cyan;
-  background-color:#23192e;
+  color: cyan;
+  background-color: #23192e;
   transition: all 0.3s ease-in-out;
 }
-.cv a button:hover
-{
+.cv a button:hover {
   cursor: pointer;
   background-color: cyan;
   color: #130127;
   box-shadow: 1px 2px 20px 5px cyan;
 }
 main .Contact {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -491,13 +497,12 @@ main .Contact h1 {
   margin-bottom: 1rem;
   width: 90%;
   border-bottom: 1px solid cyan;
-  
 }
 main .Contact .give {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   gap: 2rem;
 }
 main .Contact .give .details {
@@ -512,10 +517,10 @@ main .Contact .give .details h2 {
   width: 100%;
   margin: 1rem;
 }
-main .Contact .give .details .email,main .Contact .give .details .phn
-{
+main .Contact .give .details .email,
+main .Contact .give .details .phn {
   margin-left: 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 main .Contact .give .details .email i {
   font-size: 2.3rem;
@@ -572,34 +577,27 @@ main .Contact .contact form input[type="submit"]:hover {
   background-color: #e6ee0b;
   cursor: pointer;
 }
-p
-{
+p {
   transition: display 1s ease-in-out;
 }
-#see
-{
+#see {
   display: none;
-  
-} 
+}
 @media (max-width: 1000px) {
   main .Contact .give {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 900px) 
-{
+@media (max-width: 900px) {
   main .Home,
   main .About {
     flex-wrap: wrap-reverse;
   }
-  .i
-  {
+  .i {
     width: 100%;
   }
-
 }
 @media (max-width: 650px) {
-  
   main .Contact .contact form input,
   main .Contact .contact form textarea {
     width: 50vw;
@@ -613,38 +611,31 @@ p
     width: 15rem;
   }
 }
-@media(max-width:1130px)
-{
-  header nav .two ul
-  {
-    height:100vh;
+@media (max-width: 1130px) {
+  header nav .two ul {
+    height: 100vh;
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: top 1s ease-in-out;
     display: none;
-    background-color:rgb(19, 1, 39,0.9);
+    background-color: rgb(19, 1, 39, 0.9);
   }
-  header nav .two ul li a
-  {
+  header nav .two ul li a {
     font-size: 3rem;
-
   }
-  header nav .two ul .close i
-  {
-     display: block;
-     position: absolute;
-     top:20px;
-     right:20px;
-
+  header nav .two ul .close i {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
-  header nav .two .main i
-  {
+  header nav .two .main i {
     display: block;
   }
 }
