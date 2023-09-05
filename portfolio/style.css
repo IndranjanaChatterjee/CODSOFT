@@ -253,7 +253,7 @@ main .Skills {
   margin: 2rem;
 }
 main .Skills h1 {
-  color: cyan;
+  color:#bebbbb ;
   text-align: center;
   font-size: clamp(0.5rem, 4rem, 5rem);
   margin: 2rem;
@@ -374,7 +374,7 @@ main .Skills .skills .professional .skill1:hover {
   text-align: center;
   width: 100%;
   font-size: clamp(0.5rem, 4rem, 5rem);
-  color: cyan;
+  color: #bebbbb;
   font-weight: 400;
   margin-bottom: 1rem;
   width: 90%;
@@ -455,7 +455,7 @@ main .Resume .cv {
 main .Resume h1 {
   text-align: center;
   width: 100%;
-  color: cyan;
+  color: #bebbbb;
   font-size: clamp(0.5rem, 4rem, 5rem);
   font-weight: 400;
   margin-bottom: 1rem;
@@ -495,7 +495,7 @@ main .Contact h1 {
   text-align: center;
   width: 100%;
   font-size: clamp(0.5rem, 4rem, 5rem);
-  color: cyan;
+  color: #bebbbb;
   font-weight: 400;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -607,7 +607,7 @@ main .Education h1
   text-align: center;
   width: 100%;
   font-size: clamp(0.5rem, 4rem, 5rem);
-  color: cyan;
+  color: #bebbbb;
   font-weight: 400;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -653,6 +653,10 @@ footer p
   padding: 1.5rem;
   font-size: 1.2rem;
   color:#bebbbb;
+}
+.cyan
+{
+  color:cyan;
 }
 @media (max-width: 1000px) {
   main .Contact .give {
