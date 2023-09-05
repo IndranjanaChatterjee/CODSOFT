@@ -62,7 +62,7 @@ header nav .two ul li {
 }
 header nav .two .main i,
 header nav .two ul .close i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 1rem;
   display: none;
   cursor: pointer;
@@ -139,6 +139,10 @@ main .About .intro p {
 .name {
   font-size: 3rem;
 }
+h1
+{
+  text-align: center;
+}
 #codechef {
   color: cyan;
 }
@@ -208,7 +212,7 @@ main .About .intro .more button:hover {
 }
 .About .intro h1 {
   font-size: clamp(0.5rem, 4rem, 5rem);
-  color: cyan;
+  color: #bebbbb;
   font-weight: 400;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
@@ -254,8 +258,8 @@ main .Skills h1 {
   font-size: clamp(0.5rem, 4rem, 5rem);
   margin: 2rem;
   font-weight: 400;
-
-  width: 90%;
+  
+  
   border-bottom: 1px solid cyan;
   padding-bottom: 1rem;
 }
@@ -533,7 +537,7 @@ main .Contact .give .details .phn i {
   margin-right: 1rem;
 }
 main .Contact .give .details p {
-  font-size: clamp(0.5rem, 2rem, 3rem);
+  font-size: clamp(0.5rem, 1.3rem, 2.3rem);
  
   text-align: center;
 }
@@ -642,6 +646,14 @@ main .Education .outer .box p
 {
   color:#fac9b8;
 }
+footer p
+{
+  text-align: center;
+  
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color:#bebbbb;
+}
 @media (max-width: 1000px) {
   main .Contact .give {
     flex-wrap: wrap;
@@ -674,6 +686,19 @@ main .Education .outer .box p
     width: 15rem;
     height: 15rem;
   }
+  .p .layer h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+  .p .layer p {
+    font-size: 0.7remrem;
+    padding: 0.5rem;
+  }
+  .p .layer a i {
+    font-size: 1.7rem;
+    color: black;
+}
 }
 @media (max-width: 400px) {
   
@@ -681,6 +706,10 @@ main .Education .outer .box p
   {
     width: 10rem;
     height: 20rem;
+  }
+  .pic {
+    width: 17rem;
+    height: 19rem;
   }
 }
 @media (max-width: 1130px) {
@@ -699,7 +728,7 @@ main .Education .outer .box p
     background-color: rgb(19, 1, 39, 0.9);
   }
   header nav .two ul li a {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header nav .two ul .close i {
     display: block;
@@ -710,4 +739,6 @@ main .Education .outer .box p
   header nav .two .main i {
     display: block;
   }
+  
 }
+
