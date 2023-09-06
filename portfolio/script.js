@@ -47,3 +47,19 @@ more.addEventListener("click", () => {
     more.innerText = "Click for More";
   }
 });
+function sendemail()
+{
+Email.send({
+  Host : "smtp.gmail.com",
+  Username : "indranjanachatterjee@gmail.com",
+  Password : "1success#",
+  To : 'indranjanachatterjee@gmail.com',
+  From :document.getElementById("em").value ,
+  
+  Subject :document.getElementById("sub").value,
+
+  Body :document.getElementById("msg").value
+}).then(
+message => alert(message)
+);
+}
