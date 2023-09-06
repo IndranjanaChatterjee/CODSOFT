@@ -681,6 +681,10 @@ footer p
     width: 20rem;
     height: 22rem;
   }
+  #element
+  {
+    font-size: 2.5rem;
+  }
   .technical,
   .professional {
     width: 15rem;
@@ -703,6 +707,13 @@ footer p
     font-size: 1.7rem;
     color: black;
 }
+main .Home .intro,
+main .About .intro {
+
+  padding: 0.2rem;
+  margin: 0.2rem;
+  
+}
 }
 @media (max-width: 400px) {
   
@@ -715,6 +726,7 @@ footer p
     width: 17rem;
     height: 19rem;
   }
+  
 }
 @media (max-width: 1130px) {
   header nav .two ul {
