@@ -52,7 +52,7 @@ function sendemail()
 Email.send({
   Host : "smtp.gmail.com",
   Username : "indranjanachatterjee@gmail.com",
-  Password : "1success#",
+  Password : "2B0B26CD004356A676BA6053185DB22B6A07",
   To : 'indranjanachatterjee@gmail.com',
   From :document.getElementById("em").value ,
   
