@@ -666,6 +666,30 @@ footer p
 {
   color:cyan;
 }
+#submit
+{
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+
+  border: 1.5px solid cyan;
+  border-radius: 3rem;
+  color: cyan;
+  background-color: #23192e;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+#submit:hover
+{
+  cursor: pointer;
+  background-color: cyan;
+  color: #130127;
+  box-shadow: 1px 2px 20px 5px cyan;
+
+}
 @media (max-width: 1000px) {
   main .Contact .give {
     flex-wrap: wrap;
