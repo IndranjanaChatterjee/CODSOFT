@@ -73,7 +73,7 @@ header nav .two ul li a {
   font-size: 1.3rem;
   transition: all 0.6s;
 }
-header nav .two ul li:hover {
+header nav .two ul li:hover,header nav .two ul li.active {
   transform: scale(1.02);
   text-decoration: underline;
   color: #fac9b8;
