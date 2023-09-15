@@ -52,6 +52,11 @@ submit.addEventListener("click",()=>
 {
   
   sendemail();
+  document.getElementById("nn").value="";
+  document.getElementById("em").value="";
+  document.getElementById("sub").value="";
+  document.getElementById("msg").value="";
+  
 })
 function sendemail()
 {
@@ -66,6 +71,15 @@ function sendemail()
     Subject : "This is the subject",
     Body :body
 }).then(
-  message => alert(message)
+  message => {
+    if(message=='OK')
+    {
+      swal("Good job!", "Your message is successfully received!", "success");
+    }
+    else
+    {
+      swal("Something Wrong!", "Your message is not received!", "error");
+    }
+  }
 );
 }
