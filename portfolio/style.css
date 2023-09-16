@@ -186,11 +186,22 @@ main .About .image {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-main .About .image img {
+main .About .image .i {
   width: 15rem;
   margin: 1rem;
+  border-radius: 36%;
+}
+#blobs
+{
+  width: 30rem;
+  margin: 1rem;
+  position: absolute;
+  bottom:-15%;
+  left:-30%;
+  z-index: -1;
 }
 main .About .intro .more {
   display: flex;
@@ -783,6 +794,15 @@ main .Contact .give .details .email ,main .Contact .give .details .phn ,main .Co
   font-size: 0.9rem;
 
 }
+#blobs
+{
+  width: 25rem;
+  margin: 1rem;
+  position: absolute;
+  top:34%;
+  left:-30%;
+  z-index: -1;
+}
 }
 @media (max-width: 400px) {
   
@@ -826,6 +846,7 @@ main .Contact .give .details .email ,main .Contact .give .details .phn ,main .Co
   header nav .two .main i {
     display: block;
   }
+
   
 }
 
