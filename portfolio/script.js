@@ -88,9 +88,7 @@ function sendemail() {
     document.getElementById("msg").value;
   console.log(body);
   Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "indranjanachatterjee@gmail.com",
-    Password: "2B0B26CD004356A676BA6053185DB22B6A07",
+    SecureToken :"c2ef84d5-c96d-40eb-8b99-bb04c6fd0a06", 
     To: "indranjanachatterjee@gmail.com",
     From: "indranjanachatterjee@gmail.com",
     Subject: "This is the subject",
