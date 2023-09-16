@@ -539,6 +539,7 @@ main .Contact .give .details .email,
 main .Contact .give .details .phn {
   margin-left: 1rem;
   font-size: 1rem;
+  
 }
 main .Contact .give .details .email i {
   font-size: 2.3rem;
@@ -555,6 +556,10 @@ main .Contact .give .details p {
  
   text-align: center;
 }
+main .Contact .give .contact
+{
+  margin-right: 3rem;
+}
 main .Contact .give .contact form {
   display: flex;
   justify-content: center;
@@ -564,17 +569,31 @@ main .Contact .give .contact form {
   padding: 1rem;
   
 }
-main .Contact .contact form input,
-main .Contact .contact form textarea {
+main .Contact .contact form input
+ {
   border: none;
   outline: none;
   width: 30rem;
   margin-bottom: 1rem;
   padding: 1.2rem;
-  background-color: #67676d;
-  border-radius: 3rem;
-  font-size: 1.5rem;
+  background-color:transparent;
+  border-bottom: 2px solid black;
+  font-size: 1.15rem;
   font-weight: 200;
+}
+main .Contact .contact form textarea
+{
+  border: none;
+  outline: none;
+  width: 30rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  background-color:transparent;
+  border: 2px solid black;
+  border-radius: 2rem;
+  font-size: 1.15rem;
+  font-weight: 200;
+
 }
 main .Contact .contact form input::placeholder,
 main .Contact .contact form textarea::placeholder {
