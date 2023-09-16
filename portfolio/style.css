@@ -756,6 +756,12 @@ main .Contact .give .details
 {
   margin-left: 0rem;
 }
+main .Contact .give .details .email ,main .Contact .give .details .phn ,main .Contact .give .details .phn i,main .Contact .give .details .email i
+
+{
+  font-size: 0.9rem;
+
+}
 }
 @media (max-width: 400px) {
   
@@ -772,7 +778,7 @@ main .Contact .give .details
 }
 @media (max-width: 1130px) {
   header nav .two ul {
-    height: 100vh;
+    height: 90vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -782,12 +788,13 @@ main .Contact .give .details
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease-in-out;
-    display: none;
+    transition: top 1s ease-in-out;
+    
     background-color: rgb(19, 1, 39, 0.9);
+    display: none;
   }
   header nav .two ul li a {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header nav .two ul .close i {
     display: block;
