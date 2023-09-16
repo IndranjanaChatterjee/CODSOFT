@@ -52,13 +52,15 @@ header nav .one {
 }
 header nav .two ul {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  align-items: center;
+  
+  gap: 1.35rem;
   position: relative;
 }
 header nav .two ul li {
   list-style: none;
+  
 }
 header nav .two .main i,
 header nav .two ul .close i {
@@ -70,11 +72,15 @@ header nav .two ul .close i {
 header nav .two ul li a {
   text-decoration: none;
   color: #bebbbb;
-  font-size: 1.3rem;
-  transition: all 0.6s;
+  font-size: 1rem;
+  transition: all 0.6s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 header nav .two ul li:hover,header nav .two ul li.active {
-  transform: scale(1.02);
+  transform: scale(1.05);
   text-decoration: underline;
   color: #fac9b8;
 }
@@ -365,12 +371,12 @@ main .Skills .skills .professional .skill1 p
 main .Skills .skills .professional .skill1:hover {
   box-shadow: 1px 3px 40px 10px #bebbbb;
 }
-.Projects {
+ #Projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} 
 .projects {
   display: flex;
   justify-content: center;
@@ -772,15 +778,16 @@ main .Contact .give .details
     left: 0;
     right: 0;
     z-index: 1000;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: top 1s ease-in-out;
+    transition: all 1s ease-in-out;
     display: none;
     background-color: rgb(19, 1, 39, 0.9);
   }
   header nav .two ul li a {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   header nav .two ul .close i {
     display: block;
