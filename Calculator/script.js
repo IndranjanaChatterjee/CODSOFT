@@ -4,9 +4,9 @@ key.forEach((e)=>
 {
     e.addEventListener("click",()=>
     {
-        if(e.innerHTML=="mod")
+        if(e.innerHTML=="π")
         {
-            input.value+="%";
+            input.value+="π";
         }
         else
         {
@@ -30,6 +30,12 @@ const result=document.getElementById("equal");
 result.addEventListener("click",()=>
 {
     let val=input.value;
+    if(val.includes('π'))
+    {
+        
+        val=val.replace('π','3.14');
+        
+    }
     
         input.value=eval(val);
         console.log(eval(val));
