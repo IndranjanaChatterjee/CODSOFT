@@ -1,0 +1,56 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Belanosima:wght@600&family=Bricolage+Grotesque&family=Dancing+Script:wght@700&family=Fraunces:wght@400;700&family=Freehand&family=Lobster&family=Manrope:wght@800&family=Merriweather:ital,wght@0,700;1,400;1,900&family=Montserrat:wght@400;500;600&family=Outfit:wght@200;400;700&family=Playfair+Display:wght@600&family=Playfair:wght@600&family=Raleway:wght@400;500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#F7F7F2;
+    --todo_background:#261C15;
+    --font:#F7F7F2;
+}
+body{
+    background-color:var(--background);
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    
+}
+.box
+{
+    background-color: var(--todo_background);
+    margin: 5rem;
+    padding: 2rem 1.3rem;
+    color:var(--font);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+h2{
+    background-color: var(--background);
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color:var(--todo_background);
+
+}
+.table
+{
+    color:var(--font);
+}
+.btn{
+    background-color: #E4E6C3;
+    color: var(--todo_background);
+    border: 1px solid var(--todo_background);
+}
+.btn:hover
+{
+    background-color:#ebf172 ;
+    color: var(--todo_background);
+    border: 1px solid var(--background);
+}
