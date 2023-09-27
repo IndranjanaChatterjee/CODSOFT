@@ -8,12 +8,12 @@
       <form action="/" method="POST">
         <div class="mb-3">
           <label for="title" class="form-label">Todo title</label>
-          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" name="title">
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" name="title" placeholder="Add Your title">
           
         </div>
         <div class="mb-3">
           <label for="desc" class="form-label">Todo description</label>
-          <input type="text" class="form-control" id="desc" name="desc">
+          <input type="text" class="form-control" id="desc" name="desc" placeholder="Add your description">
         </div>
         
         <button type="submit" class="btn btn-outline-primary btn">Add  <i class="fa-solid fa-plus"></i></button>
@@ -24,7 +24,7 @@
         <h2>My todos:</h2>
         <table class="table">
           {% if allTodo|length==0 %}
-          <div class="alert alert-danger my-3" role="alert">
+          <div class="alert alert-danger my-4 red" role="alert">
             No records!Please add records
           </div>
         

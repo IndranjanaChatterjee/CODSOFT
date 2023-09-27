@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 {% block body %}
 <div class="container mx-auto">
-    <h2 class="d-flex justify-content-center align-items-center">Update Todo</h2>
-    <form action="/update/{{allTodo.sno}}" method="POST">
+    <h2 class="d-flex justify-content-center align-items-center update">Update Todo</h2>
+    <form action="/update/{{allTodo.sno}}" method="POST" class="change">
       <div class="mb-3">
-        <label for="title" class="form-label">Todo title</label>
-        <input type="text" class="form-control" id="title" aria-describedby="emailHelp" name="title" value="{{allTodo.title}}">
+        <label for="title" class="form-label">Change todo title:</label>
+        <input type="text" class="form-control" id="title" aria-describedby="emailHelp" name="title" value="{{allTodo.title}}" placeholder="Change your todo title">
         
       </div>
       <div class="mb-3">
-        <label for="desc" class="form-label">Todo description</label>
-        <input type="text" class="form-control" id="desc" name="desc" value="{{allTodo.desc}}">
+        <label for="desc" class="form-label">Change todo description:</label>
+        <input type="text" class="form-control" id="desc" name="desc" value="{{allTodo.desc}}" placeholder="Change your description">
       </div>
       
-      <button type="submit" class="btn btn-outline-primary">Update</button>
+      <button type="submit" class="btn btn-outline-primary ch_btn">Update</button>
     </form>
   </div>
   {% endblock body %}
