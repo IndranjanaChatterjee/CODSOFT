@@ -107,5 +107,7 @@ h2{
 }
 .red
 {
-    color:red;
+    color:var(--todo_background);
+    background-color: #E4E6C3;
+    border: none;
 }
