@@ -118,23 +118,4 @@ h2{
     background-color: #E4E6C3;
     border: none;
 }
-@media (max-width:750px) {
-    .box
-    {
-        width:100%
-    }
-    .table
-    {
-        width: 50%;
-    }
-    
-    
-}
-@media (max-width:1099px) {
-    
-    .disp
-    {
-        display: none;
-    }
-    
-}
+
