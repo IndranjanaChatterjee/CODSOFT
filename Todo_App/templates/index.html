@@ -36,7 +36,7 @@
           
             <thead>
               <tr>
-                <th scope="row">Sno</th>
+                <th scope="row">Sno.</th>
                 <th colspan="2">Title</th>
                 <th >Description</th>
                 <th >Time Created</th>
@@ -51,8 +51,8 @@
                 <td>{{todo.desc}}</td>
                 <td>{{todo.date_created}}</td>
                 <td>
-                  <a href="/delete/{{todo.sno}}"><button type="button" class="btn btn-outline-primary mx-2 btn">Delete <i class="fa-solid fa-trash"></i></button></a>
-                  <a href="/update/{{todo.sno}}"><button type="button" class="btn btn-outline-primary mx-2 btn">Update <i class="fa-solid fa-pen-nib"></i></button></a>
+                  <a href="/delete/{{todo.sno}}"><button type="button" class="btn btn-outline-primary mx-2 btn"><span class="disp">Delete</span> <i class="fa-solid fa-trash"></i></button></a>
+                  <a href="/update/{{todo.sno}}"><button type="button" class="btn btn-outline-primary mx-2 btn"><span class="disp">Update</span> <i class="fa-solid fa-pen-nib"></i></button></a>
                 </td>
               </tr>
                 

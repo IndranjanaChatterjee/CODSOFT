@@ -71,6 +71,13 @@ h2{
 .table
 {
     color:var(--font);
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+}
+.table th,.table td
+{
+    padding: 1rem;
 }
 .btn{
     background-color: #E4E6C3;
@@ -110,4 +117,24 @@ h2{
     color:var(--todo_background);
     background-color: #E4E6C3;
     border: none;
+}
+@media (max-width:750px) {
+    .box
+    {
+        width:100%
+    }
+    .table
+    {
+        width: 50%;
+    }
+    
+    
+}
+@media (max-width:1099px) {
+    
+    .disp
+    {
+        display: none;
+    }
+    
 }
